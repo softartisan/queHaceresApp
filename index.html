@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 
 <html>
-    <head></head>
+    <head>
+        <title>Quehaceres</title>
+        <link rel="stylesheet" href="/styles/styles.css">
+    </head>
     <body>
-        <h1>Cosas que hacer</h1>
-        <form id="formTodo">
-            <input type="text" name="textTodo" placeHolder="Cosa que hacer" >
-            <button>Agregar</button>
-        </form>
-        <input id="search-text" type="text" placeholder="Filtrar cosas">
-        <div id="todos"></div>
-        <label>
-            <input type="checkbox" id="checkHideCompleted"> Esconder cosas ya hechas
-        </label>
-        <script src="uuid.js"></script>
-        <script src="todoFunctions.js"></script>
-        <script src="todoApp.js"></script>
+
+        <div class="header">
+           <div class="container">
+               <h1 class="header__title">Quehaceres App</h1>
+               <h2 class="header__subtitle">¿Qué tienes que hacer?</h2>
+           </div>
+        </div>
+
+        <div class="actions">
+            <div class="actions__container">
+                <input id="search-text" class="input" type="text" placeholder="Filtrar cosas">
+                
+                <label class="checkbox">
+                    <input type="checkbox" id="checkHideCompleted"> Esconder cosas ya hechas
+                </label>
+            </div>
+        </div>
+
+        
+
+        <div class="container">
+            <div id="todos"></div>
+            <form id="formTodo">
+                <input class="input" type="text" name="textTodo" placeHolder="Cosa que hacer" >
+                <button class="button">Agregar</button>
+            </form>
+        </div>
+
+        
+        
+        <script src="/scripts/uuid.js"></script>
+        <script src="/scripts/todoFunctions.js"></script>
+        <script src="/scripts/todoApp.js"></script>
     </body>
 </html>
